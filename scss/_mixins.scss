@@ -12,12 +12,13 @@
   border-radius: 6px;
   padding: 0 5rem;
   font-weight: bold;
+  color: $colorText;
   font-size: 1.6rem;
   cursor: pointer;
   transition: all .2s;
   &:hover{
-    background-color: $colorText;
-    color: $bg;
+    background-color: #4dcbd3;
+    color: $title-01-color;
   }
 }
 

@@ -30,6 +30,10 @@ header {
             font-size: 16px;
             line-height: 19px;            
             color: #FCFCFC;
+            &:hover {
+              color: #4dcbd3;
+              font-weight: bold;
+            }
 
            }
          }

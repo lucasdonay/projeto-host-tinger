@@ -1,3 +1,95 @@
-button {
-  @include style-btn(5.4rem,$button-background,$hero-background)
+.s-hero {
+  background-color: $hero-background;
+  margin-top: 11.9rem;
+  padding-top: 3.9rem;
+  .container {
+    @include flex(row,flex-start,space-between)
+  }
+  .text {
+    max-width: 55rem;
+    width: 100%;
+    h1 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 4.8rem;
+      line-height: 120%;
+      color: $title-01-color;
+      margin-bottom: 1.6rem;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 150%;
+      color: $title-01-color;
+      max-width: 48.8rem;
+      margin-bottom: 3.2rem;
+    }
+    button {
+      @include style-btn(5.4rem,$button-background,$hero-background)
+    }
+    .about {
+      display: flex;
+      align-items: center;    
+      margin-top: 4.8rem; 
+      .icon {
+        width: 4.2rem;
+        height: 4.2rem;
+        background-color: rgba(123,90,186,0.4);
+        border-radius: 6px;      
+        @include flex(row,center,center);        
+      }
+      span{
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        color: #FFFFFF;
+        margin-left: 1.6rem;
+      }
+    }
+    
+  }
+  .image-hero{
+    img {
+    position: relative;
+    top: 3.4rem
+  }
+  }
+  @include responsive(991px) {
+    .container {
+    display: flex;
+    flex-direction: column;
+    }
+    .text{
+      max-width: 100%;
+      h1{
+        text-align: center;
+      }
+      p{
+        max-width: 100%;
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+      }
+      .about {
+        justify-content: center;
+      }
+      
+      
+    }
+}
+  @include responsive(700px) {
+    padding-top: 4.5rem;
+    margin-top: 8rem;
+    .text {
+      h1 {
+        font-size: 4.3rem;
+      }
+    }
+    img {
+      left: -25px
+    }
+  }
 }
