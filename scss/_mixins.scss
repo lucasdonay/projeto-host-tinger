@@ -4,6 +4,12 @@
   }
 }
 
+@mixin flex($direction,$align,$justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
 @mixin style-btn($height,$bg,$colorText,) {
   display: inline-block;
   height: $height;
@@ -20,11 +26,4 @@
     background-color: #4dcbd3;
     color: $title-01-color;
   }
-}
-
-@mixin flex($direction,$align,$justify) {
-  display: flex;
-  flex-direction: $direction;
-  align-items: $align;
-  justify-content: $justify;
 }
